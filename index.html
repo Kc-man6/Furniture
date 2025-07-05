@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
@@ -14,9 +15,15 @@
             <div class="logo-container">
                 <div class="logo">Soudemy</div>
 
+                <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
         <nav>
             <div class="navbar">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="shop.html">Shop</a>
                 <a href="About.html">About us</a>
                 <a href="blog.html">Blog</a>
@@ -26,22 +33,18 @@
         
         <div class="icons">
             <i class='bx  bx-search-big'  ></i> 
-            <a href="sofa_code.html"><i class='bx  bx-shopping-bag'></i> </a>
-            
-            <i class='bx  bx-menu-close'  ></i> 
+            <a href="sofa_code.html"><i class='bx  bx-shopping-bag'></i></a>             
         </div>
     </header>
 
     <div class="container">
-        <button class="right-button">
-            <img src="Image/icons/Rectangle 2.png" alt="">
-            <i class='bx  bx-chevron-right'></i> 
-        </button>
-        <button class="left-button">
-            <img src="Image/icons/Rectangle 2.png" alt="">
-            <i class='bx  bx-chevron-left'  ></i> 
-            <!-- <img src="Image/icons/arrow-left.png" class="left" alt=""> -->
-        </button>
+        <div class="nav-arrow left">
+      <span>&#10094;</span>
+    </div>
+    <div class="nav-arrow right">
+      <span>&#10095;</span>
+    </div>
+
         <div class="content">
             <h1>ALL FOR YOUR HOME</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis cumque et rerum dolores magnam facilis quibusdam.</p>
@@ -59,19 +62,19 @@
         <div class="product-item">
             <img src="Image/flower-1.png" alt="">
             <div class="tag">Sale</div>
-            <h2>Pot</h2>
+            <h1>Pot</h1>
             <p>$223,000</p>
         </div>
         <div class="product-item">
             <img src="Image/lamp-1.png" alt="">
             <div class="tag">New</div>
-            <h2>Lamp</h2>
+            <h1>Lamp</h1>
             <p>$223,000</p>
         </div>
         <div class="product-item">
             <img src="Image/chair-1.png" alt="">
             <div class="tag">Sold</div>
-            <h2>Chair</h2>
+            <h1>Chair</h1>
             <p>$223,000</p>
         </div>
     </div>
