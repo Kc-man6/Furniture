@@ -253,6 +253,9 @@ footer{
     text-decoration: none;
 }
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
     header {
         gap: 30px;
         padding: 20px;
@@ -265,18 +268,23 @@ footer{
         gap: 10px;
     }
     .shop {
+        flex-direction: column;
         gap: 30px;
         padding: 15px;
+        align-items: center;
     }
     .shop-header {
-        gap: 10px;
+        flex-direction: column;
+        /* gap: 10px; */
         padding: 10px;
+        align-items: flex-start;
     }
     .shop-header p {
         font-size: 16px;
         margin-bottom: 10px;
     }
     .shop-container {
+        flex-direction: column;
         gap: 20px;
         align-items: center;
     }
@@ -292,10 +300,13 @@ footer{
     .option-container {
         gap: 30px;
         padding: 10px 0;
-    }
-    .input-box {
         width: 100%;
-        max-width: 350px;
+        align-items: center;
+    }
+    
+    .category-container{
+        display: flex;
+        gap: 70px;
     }
     .category {
         gap: 10px;
@@ -308,12 +319,22 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
+    .price button {
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 0;
+        font-size: 16px;
+        margin-top: 10px;
+    }
     .card {
         padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .range-slider {
         width: 100%;
         min-width: 0;
+        max-width: 350px;
     }
     .page-container {
         gap: 30px;
@@ -323,6 +344,11 @@ footer{
     .about {
         width: 100%;
         padding: 10px;
+        box-sizing: border-box;
+    }
+    .about-container{
+        display: flex;
+        width: 300px;
     }
     .about h2 {
         font-size: 22px;
@@ -333,5 +359,10 @@ footer{
     footer {
         font-size: 14px;
         padding: 15px;
+    }
+    .footer-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
     }
 }
