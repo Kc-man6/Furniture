@@ -341,6 +341,9 @@ footer{
         padding: 10px;
         flex-direction: column;
     }
+    #shop-content{
+        display: none;
+    }
     .about {
         width: 100%;
         padding: 10px;
