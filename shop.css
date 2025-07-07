@@ -252,6 +252,10 @@ footer{
     font-weight: 400;
     text-decoration: none;
 }
+.about-container{
+    display: flex;
+    width: 500px;
+}
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
