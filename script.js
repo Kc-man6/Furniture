@@ -31,12 +31,11 @@ updateRange();
 
 
 // Hamburger menu functionality
-
 const hamburger = document.getElementById("hamburger");
-const navLinks = document.querySelector(".nav-links");
+const navbar = document.getElementById("navbar");
 
 hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  hamburger.classList.toggle("active"); // this triggers
+  hamburger.classList.toggle("active");
+  navbar.classList.toggle("active");
 });
 
