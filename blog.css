@@ -258,7 +258,6 @@ footer{
         overflow-x: hidden;
     }
     header {
-        flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
