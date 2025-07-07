@@ -621,7 +621,7 @@ footer{
     .hamburger {
     display: flex;
   }
-  .nav-bar{
+  .navbar{
         position: absolute;
         top: 100%;
         right: 0;
@@ -630,16 +630,17 @@ footer{
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
         display: none;
         flex-direction: column;
         align-items: center;
+        z-index: 100;
     }
-    .nav-bar .active{
+    .navbar .active{
         display: flex;
     }
-    .nav-bar a{
+    .navbar a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
