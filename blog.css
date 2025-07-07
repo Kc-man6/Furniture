@@ -66,9 +66,7 @@ header{
 }
 .blog-item p{
     color: #878686;
-    display: flex;
     align-items: center;
-    gap: 5px;
 }
 .blog-container{
     display: flex;
