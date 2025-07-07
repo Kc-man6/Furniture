@@ -222,9 +222,16 @@ footer{
     font-weight: 400;
     text-decoration: none;
 }
+.about-container{
+    display: flex;
+    width: 500px;
+}
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
     header {
-        gap: 30px;
+        gap: 20px;
         padding: 20px;
     }
     .logo-container {
@@ -241,29 +248,40 @@ footer{
         align-items: center;
     }
     .sofa-container {
+        flex-direction: column;
         gap: 20px;
+        align-items: center;
     }
     .sofa-header {
         padding: 10px;
         font-size: 18px;
+        text-align: center;
     }
+    .sofa-image img,
     .long-sofa img {
-        display: none;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
     .sofa-images {
+        flex-direction: row;
         gap: 5px;
         justify-content: center;
     }
     .sofa-gallery {
+        flex-direction: column;
         gap: 10px;
         align-items: center;
     }
     .sofa-details {
+        width: 100%;
         padding: 0 10px;
+        box-sizing: border-box;
     }
     .cart {
         gap: 15px;
         align-items: flex-start;
+        width: 100%;
     }
     .number {
         min-width: 120px;
@@ -275,21 +293,22 @@ footer{
     }
     .wish-list {
         gap: 10px;
-        font-size: 14px;
+        font-size: 18px;
     }
     .cart-container {
         gap: 20px;
     }
     .sku {
-        font-size: 14px;
+        font-size: 16px;
     }
-    /* .description {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 14px;
-    } */
+    .description {
+        gap: 15px;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
     .related {
-        padding: 40px;
+        padding: 30px;
         gap: 10px;
     }
     .related-header {
@@ -298,11 +317,9 @@ footer{
         text-align: center;
     }
     .related-gallery {
+        flex-direction: column;
         gap: 10px;
-        margin-left: 200px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 60%;
+        margin-left: 0;
         align-items: center;
     }
     .related-item img {
@@ -312,12 +329,23 @@ footer{
     .about {
         width: 100%;
         padding: 10px;
+        box-sizing: border-box;
     }
     .about h2 {
         font-size: 20px;
     }
-    .about p, .about a {
+    .about p,
+    .about a {
         font-size: 14px;
+    }
+    .about-container{
+        display: flex;
+        width: 300px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     footer {
         font-size: 14px;
