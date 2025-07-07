@@ -464,6 +464,10 @@ footer{
     font-weight: 400;
     text-decoration: none;
 }
+.about-container{
+    display: flex;
+    width: 500px;
+}
 
 .hamburger {
   display: none;
@@ -523,7 +527,6 @@ footer{
     .gallery-content,
     .testimonials-content,
     .about {
-        width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
         padding: 0 10px !important;
@@ -606,7 +609,6 @@ footer{
     }
     .nav-arrow.left,
     .nav-arrow.right {
-        /* position: static !important; */
         padding: 10px !important;
         margin: 10px 0 !important;
         transform: none !important;
