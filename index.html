@@ -12,11 +12,10 @@
     
     <section class="hero">
         <header>
+            
             <div class="logo-container">
                 <div class="logo">Soudemy</div>
-
-                
-
+             </div>    
         <nav>
             <div class="navbar" id="navbar">
                 <a href="index.html" class="active">Home</a>
@@ -25,16 +24,14 @@
                 <a href="blog.html">Blog</a>
             </div>
         </nav>
-    </div>
-        
         <div class="icons">
             <i class='bx  bx-search-big'  ></i> 
             <a href="sofa_code.html"><i class='bx  bx-shopping-bag'></i></a>
-             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>           
+       <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
         </div>
     </header>
 
@@ -225,6 +222,22 @@
         </div>
 
     </footer>
-    <script src="script.js"></script>
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const navbar = document.getElementById('navbar');
+
+  if (hamburger && navbar) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navbar.classList.toggle("show"); // Use .show if that's your sliding class
+  });
+
+  // Hide navbar and reset hamburger on scroll
+  window.addEventListener("scroll", () => {
+    navbar.classList.remove("show");
+    hamburger.classList.remove("active");
+  });
+}
+</script>
 </body>
 </html>
