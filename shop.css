@@ -416,6 +416,12 @@ footer{
     box-shadow: -4px 0 10px rgba(0,0,0,0.1);
     border-bottom-left-radius: 100%;
   }
+    .navbar a{
+        color: white;
+    }
+    .navbar a:hover{
+    border-bottom: 3px solid white;
+}
 
   .navbar.active {
     right: 0;

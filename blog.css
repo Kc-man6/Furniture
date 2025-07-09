@@ -319,7 +319,6 @@ footer{
         height: auto;
     }
     .second-container {
-        /* width: 100%; */
         gap: 30px;
     }
     .input-box {
@@ -380,6 +379,12 @@ footer{
         align-items: center;
         text-align: center;
     }
+    .navbar a{
+        color: white;
+    }
+    .navbar a:hover{
+    border-bottom: 3px solid white;
+}
 
     .navbar {
         display: flex;

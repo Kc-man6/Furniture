@@ -375,6 +375,12 @@ footer{
         border-bottom-left-radius: 100%;
         align-items: center;
   }
+    .navbar a{
+        color: white;
+    }
+    .navbar a:hover{
+    border-bottom: 3px solid white;
+}
 
   .navbar.active {
     right: 0;
