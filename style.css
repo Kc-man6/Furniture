@@ -635,9 +635,6 @@ footer{
     #content-2 .stylish-content {
         order: 1;
     }
-  .navbar.active {
-    display: flex;
-  }
   .hamburger {
     display: flex !important;
     flex-direction: column;
@@ -658,7 +655,7 @@ footer{
     width: 60%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -669,5 +666,6 @@ footer{
 
   .navbar.show {
     right: 0;
+    display: flex;
   }
 }

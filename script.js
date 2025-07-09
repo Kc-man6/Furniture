@@ -29,6 +29,16 @@ maxRange.addEventListener("input", updateRange);
 updateRange();
 
 
+// Hamburger menu functionality
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('.navbar');
 
-
-
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active'); // Toggle active class for hamburger
+});
+// Hide navbar and reset hamburger on scroll
+window.addEventListener('scroll', () => {
+  navMenu.classList.remove('active');
+  hamburger.classList.remove('active');
+  });
