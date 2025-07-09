@@ -251,10 +251,11 @@ footer{
     header {
         gap: 20px;
         padding: 20px;
+        justify-content: space-between;
     }
     .logo-container {
-        font-size: 20px;
-        gap: 20px;
+        font-size: 35px;
+        gap: 10px;
     }
     .icons {
         gap: 10px;

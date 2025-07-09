@@ -280,9 +280,10 @@ footer{
     header {
         gap: 20px;
         padding: 20px;
+        justify-content: space-between;
     }
     .logo-container {
-        font-size: 20px;
+        font-size: 35px;
         gap: 20px;
     }
     .icons {
@@ -383,8 +384,8 @@ footer{
         color: white;
     }
     .navbar a:hover{
-    border-bottom: 3px solid white;
-}
+        border-bottom: 3px solid white;
+    }
 
     .navbar {
         display: flex;
@@ -401,13 +402,13 @@ footer{
         box-shadow: -4px 0 10px rgba(0,0,0,0.1);        
         border-bottom-left-radius: 100%;
         align-items: center;
-  }
+    }
 
   .navbar.active {
-    right: 0;
+        right: 0;
   }
 
   .hamburger {
-    display: flex;
+        display: flex;
   }
 }

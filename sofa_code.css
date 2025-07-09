@@ -226,6 +226,29 @@ footer{
     display: flex;
     width: 500px;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
@@ -233,9 +256,10 @@ footer{
     header {
         gap: 20px;
         padding: 20px;
+        justify-content: space-between;
     }
     .logo-container {
-        font-size: 16px;
+        font-size: 35px;
         gap: 10px;
     }
     .icons {
@@ -259,8 +283,8 @@ footer{
     }
     .sofa-image img,
     .long-sofa img {
-        width: 100%;
-        max-width: 300px;
+        /* width: 100%; */
+        /* max-width: 300px; */
         height: auto;
     }
     .sofa-images {
@@ -351,10 +375,38 @@ footer{
         font-size: 14px;
         padding: 15px;
     }
+    #empty{
+        display: none;
+    }
       .navbar a{
         color: white;
     }
     .navbar a:hover{
     border-bottom: 3px solid white;
 }
+
+.navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        width: 40%;
+        padding: 100px 20px;
+        gap: 30px;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 10px rgba(0,0,0,0.1);        
+        border-bottom-left-radius: 100%;
+        align-items: center;
+    }
+
+  .navbar.active {
+        right: 0;
+  }
+
+  .hamburger {
+        display: flex;
+  }
 }
