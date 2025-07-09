@@ -283,7 +283,7 @@ footer{
     }
     .sofa-image img,
     .long-sofa img {
-        /* width: 100%; */
+        width: 100%;
         max-width: 300px;
         height: auto;
     }
