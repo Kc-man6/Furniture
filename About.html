@@ -27,7 +27,11 @@
         <div class="icons">
             <i class='bx  bx-search-big'></i> 
             <a href="sofa_code.html"><i class='bx  bx-shopping-bag'></i> </a> 
-            <i class='bx  bx-menu-close'></i> 
+            <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div> 
         </div>
     </header>
 
@@ -172,7 +176,21 @@
                 <i class='bx  bx-twitter' ></i>
             </div>
         </div>
+        <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('.navbar');
 
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active'); // Toggle the active class on the hamburger
+  });
+
+  // Hide navbar and reset hamburger on scroll
+window.addEventListener('scroll', () => {
+  navMenu.classList.remove('active');
+  hamburger.classList.remove('active');
+});
+</script>
     </footer>
 </body>
 </html>
