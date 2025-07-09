@@ -648,25 +648,24 @@ footer{
     z-index: 1000;
   }
   .navbar a {
-    display: block;
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
     color: white;
   }
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 60%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    transition: right 0.4s ease;
-    z-index: 1000;
+   .navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        width: 40%;
+        padding: 100px 20px;
+        gap: 30px;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 10px rgba(0,0,0,0.1);        
+        border-bottom-left-radius: 100%;
+        align-items: center;
+        z-index: 1000;
   }
 
   .navbar.show {
